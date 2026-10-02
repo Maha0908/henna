@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>Henna_in_Fingers | Full Hand Mehandi Stickers</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Mukta:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================================================
+   1. COLORS
+========================================================= */
+
+:root {
+  --bg:#fbf6ee;
+  --ink:#2a1409;
+  --green:#1f3d2b;
+  --henna:#6b2f14;
+  --gold:#d9a23a;
+  --line:#e6d8c3;
+  --card:#fff;
+  color-scheme:light;
+}
+
+@media (prefers-color-scheme:dark) {
+  :root:not([data-theme="light"]) {
+    --bg:#17120e;
+    --ink:#f3e8d6;
+    --green:#0f2418;
+    --henna:#e3a26f;
+    --gold:#e5b251;
+    --line:#3a2d22;
+    --card:#221a14;
+    color-scheme:dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg:#17120e;
+  --ink:#f3e8d6;
+  --green:#0f2418;
+  --henna:#e3a26f;
+  --gold:#e5b251;
+  --line:#3a2d22;
+  --card:#221a14;
+  color-scheme:dark;
+}
+
+
+/* =========================================================
+   2. BASIC
+========================================================= */
+
+* {
+  box-sizing:border-box;
+}
+
+html {
+  scroll-behavior:smooth;
+  scroll-padding-top:env(safe-area-inset-top,0px);
+}
+
+body {
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font:400 17px/1.6 Mukta,system-ui,sans-serif;
+}
+
+h1,h2,h3 {
+  font-family:Fraunces,Georgia,serif;
+  line-height:1.15;
+  margin:0;
+}
+
+a {
+  color:inherit;
+}
+
+:focus-visible {
+  outline:3px solid var(--gold);
+  outline-offset:2px;
+}
+
+
+/* =========================================================
+   3. TOP BAR + HEADER
+========================================================= */
+
+.bar {
+  background:var(--green);
+  color:#f3e8d6;
+  text-align:center;
+  font-size:14px;
+  padding:8px 12px;
+}
+
+header {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding:14px 5vw;
+  border-bottom:1px solid var(--line);
+  position:sticky;
+  top:env(safe-area-inset-top,0px);
+  background:var(--bg);
+  z-index:5;
+}
+
+.logo {
+  font:700 24px Fraunces,serif;
+  text-decoration:none;
+  color:var(--henna);
+}
+
+nav {
+  display:flex;
+  gap:22px;
+  font-weight:600;
+}
+
+nav a {
+  text-decoration:none;
+}
+
+.cartbtn {
+  border:1.5px solid var(--henna);
+  background:none;
+  color:var(--henna);
+  border-radius:99px;
+  padding:6px 16px;
+  font:600 15px Mukta,sans-serif;
+  cursor:pointer;
+}
+
+
+/* =========================================================
+   4. HERO
+========================================================= */
+
+.hero {
+  background:var(--green);
+  color:#f6ecd9;
+  padding:72px 5vw;
+  display:grid;
+  grid-template-columns:1.1fr 1fr;
+  gap:40px;
+  align-items:center;
+  overflow:hidden;
+}
+
+.hero h1 {
+  font-size:clamp(38px,6vw,68px);
+  font-weight:700;
+}
+
+.hero p {
+  max-width:46ch;
+  opacity:.9;
+  margin:18px 0 28px;
+}
+
+.btn {
+  display:inline-block;
+  background:var(--gold);
+  color:#2a1409;
+  font:600 17px Mukta,sans-serif;
+  padding:13px 28px;
+  border-radius:99px;
+  text-decoration:none;
+  border:0;
+  cursor:pointer;
+}
+
+.btn.ghost {
+  background:none;
+  color:inherit;
+  border:1.5px solid currentColor;
+  margin-left:10px;
+}
+
+.sheet {
+  aspect-ratio:3/4;
+  max-width:380px;
+  justify-self:center;
+  width:100%;
+  background:#f6ecd9;
+  border-radius:22px;
+  padding:18px;
+  transform:rotate(3deg);
+  box-shadow:0 20px 50px rgba(0,0,0,.35);
+}
+
+.sheet svg {
+  width:100%;
+  height:100%;
+}
+
+
+/* =========================================================
+   5. TRUST
+========================================================= */
+
+.trust {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+  padding:26px 5vw;
+  border-bottom:1px solid var(--line);
+  text-align:center;
+  font-weight:600;
+  color:var(--henna);
+}
+
+section {
+  padding:64px 5vw;
+}
+
+.head {
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  gap:16px;
+  margin-bottom:28px;
+  flex-wrap:wrap;
+}
+
+.head h2 {
+  font-size:clamp(28px,4vw,40px);
+}
+
+
+/* =========================================================
+   6. PRODUCT CARDS
+   (to change the photo box shape: edit aspect-ratio below)
+   (to crop instead of showing the full photo: use "cover")
+========================================================= */
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:22px;
+}
+
+.card {
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:16px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+}
+
+.art {
+  aspect-ratio:3/4;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  font-size:14px;
+  padding:8px;
+}
+
+.art img {
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+
+.card .b {
+  padding:16px;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  flex:1;
+}
+
+.card h3 {
+  font-size:19px;
+}
+
+.card small {
+  opacity:.7;
+}
+
+.price {
+  font-weight:600;
+  color:var(--henna);
+  font-size:18px;
+  margin-top:auto;
+}
+
+.card button {
+  margin-top:8px;
+  background:var(--green);
+  color:#f6ecd9;
+  border:0;
+  border-radius:10px;
+  padding:10px;
+  font:600 15px Mukta,sans-serif;
+  cursor:pointer;
+}
+
+.card button:hover {
+  opacity:.9;
+}
+
+
+/* =========================================================
+   7. HOW TO APPLY
+========================================================= */
+
+.steps {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:26px;
+  counter-reset:s;
+}
+
+.steps div {
+  counter-increment:s;
+  border-left:3px solid var(--gold);
+  padding-left:16px;
+}
+
+.steps div:before {
+  content:counter(s);
+  font:700 34px Fraunces,serif;
+  color:var(--henna);
+  display:block;
+}
+
+.steps b {
+  display:block;
+}
+
+.alt {
+  background:var(--card);
+  border-block:1px solid var(--line);
+}
+
+
+/* =========================================================
+   8. BEFORE / AFTER
+   (both boxes are the same size, photo fills the box)
+   (to change the box shape: edit aspect-ratio below)
+========================================================= */
+
+.ba {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+  max-width:640px;
+}
+
+.ba div {
+  aspect-ratio:3/4;
+  border-radius:16px;
+  border:1px solid var(--line);
+  overflow:hidden;
+  display:grid;
+  place-items:center;
+  font-weight:600;
+}
+
+.ba img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+
+/* =========================================================
+   9. CONTACT
+========================================================= */
+
+form {
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+input,
+textarea {
+  font:inherit;
+}
+
+input {
+  flex:1;
+  min-width:200px;
+  padding:12px 16px;
+  border-radius:99px;
+  border:1.5px solid var(--line);
+  background:var(--card);
+  color:var(--ink);
+}
+
+footer {
+  background:var(--green);
+  color:#f3e8d6;
+  padding:40px 5vw;
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  flex-wrap:wrap;
+  font-size:15px;
+}
+
+
+/* =========================================================
+   10. CART / CHECKOUT
+========================================================= */
+
+.ov {
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.55);
+  z-index:20;
+  display:flex;
+  justify-content:flex-end;
+}
+
+.ov[hidden] {
+  display:none;
+}
+
+.panel {
+  background:var(--bg);
+  width:min(460px,100%);
+  height:100%;
+  overflow:auto;
+  padding:24px;
+  padding-top:calc(24px + env(safe-area-inset-top,0px));
+}
+
+.panel h2 {
+  font-size:28px;
+  margin-bottom:12px;
+}
+
+.row {
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  padding:12px 0;
+  border-bottom:1px solid var(--line);
+  align-items:center;
+}
+
+.row button {
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  border:1px solid var(--line);
+  background:var(--card);
+  color:var(--ink);
+  cursor:pointer;
+}
+
+.panel input,
+.panel textarea {
+  width:100%;
+  margin:6px 0;
+  padding:11px 14px;
+  border-radius:12px;
+  border:1.5px solid var(--line);
+  background:var(--card);
+  color:var(--ink);
+  font:inherit;
+}
+
+.panel textarea {
+  resize:vertical;
+}
+
+.payment-box {
+  margin:16px 0;
+  padding:16px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:var(--card);
+}
+
+.payment-title {
+  font-weight:600;
+  margin-bottom:8px;
+}
+
+.gpay-btn {
+  width:100%;
+  background:#1a73e8;
+  color:white;
+  border:0;
+  border-radius:12px;
+  padding:14px;
+  font:600 17px Mukta,sans-serif;
+  cursor:pointer;
+  margin-top:12px;
+}
+
+.gpay-btn:hover {
+  background:#155fc0;
+}
+
+.order-reference {
+  font-size:13px;
+  opacity:.7;
+  margin-top:8px;
+}
+
+
+/* =========================================================
+   11. TOAST
+========================================================= */
+
+#toast {
+  position:fixed;
+  left:50%;
+  bottom:calc(20px + env(safe-area-inset-bottom,0px));
+  transform:translateX(-50%);
+  background:var(--ink);
+  color:var(--bg);
+  padding:10px 20px;
+  border-radius:99px;
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .2s;
+  z-index:50;
+}
+
+#toast.on {
+  opacity:1;
+}
+
+
+/* =========================================================
+   12. MOBILE
+========================================================= */
+
+@media(max-width:760px) {
+
+  .hero {
+    grid-template-columns:1fr;
+    padding:48px 5vw;
+  }
+
+  nav {
+    display:none;
+  }
+
+  .trust {
+    grid-template-columns:1fr 1fr;
+  }
+
+  .sheet {
+    transform:none;
+  }
+
+  .btn.ghost {
+    margin-left:0;
+    margin-top:10px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+
+  * {
+    transition:none!important;
+    scroll-behavior:auto!important;
+  }
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="bar">
+  Free delivery on orders over ₹500. Minimum order ₹120.
+</div>
+
+
+<!-- HEADER -->
+
+<header>
+
+  <a class="logo" href="#top">Henna_in_Fingers</a>
+
+  <nav>
+    <a href="#shop">Shop</a>
+    <a href="#how">How to apply</a>
+    <a href="#results">Results</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <button class="cartbtn" id="cart" type="button" aria-label="Open cart">
+    Cart (<span id="n">0</span>)
+  </button>
+
+</header>
+
+
+<main id="top">
+
+
+<!-- HERO -->
+
+<div class="hero">
+
+  <div>
+
+    <h1>Full hand mehandi in minutes, not hours.</h1>
+
+    <p>
+      Peel-and-apply henna stickers for the whole hand,
+      front and back. Stick on the design, fill it with
+      henna paste, peel off the sticker, and keep the stain.
+    </p>
+
+    <a class="btn" href="#shop">Shop full hand designs</a>
+    <a class="btn ghost" href="#how">See how it works</a>
+
+  </div>
+
+
+  <div class="sheet" aria-hidden="true">
+
+    <svg viewBox="0 0 300 400" fill="none" stroke="#6b2f14" stroke-width="2.5" stroke-linecap="round">
+
+      <g transform="translate(150 150)">
+
+        <circle r="46"/>
+        <circle r="30"/>
+        <circle r="8" fill="#6b2f14"/>
+
+        <path d="M0-46C14-70 14-90 0-110C-14-90-14-70 0-46Z"/>
+        <path d="M0 46C14 70 14 90 0 110C-14 90-14 70 0 46Z"/>
+        <path d="M-46 0C-70 14-90 14-110 0C-90-14-70-14-46 0Z"/>
+        <path d="M46 0C70 14 90 14 110 0C90-14 70-14 46 0Z"/>
+
+        <path d="M33-33C60-45 72-62 70-80C50-72 38-55 33-33Z"/>
+        <path d="M-33-33C-60-45-72-62-70-80C-50-72-38-55-33-33Z"/>
+        <path d="M33 33C60 45 72 62 70 80C50 72 38 55 33 33Z"/>
+        <path d="M-33 33C-60 45-72 62-70 80C-50 72-38 55-33 33Z"/>
+
+      </g>
+
+      <path d="M40 300Q95 270 150 300T260 300"/>
+      <path d="M40 330Q95 300 150 330T260 330"/>
+
+      <g fill="#6b2f14" stroke="none">
+        <circle cx="60" cy="360" r="4"/>
+        <circle cx="105" cy="360" r="4"/>
+        <circle cx="150" cy="360" r="4"/>
+        <circle cx="195" cy="360" r="4"/>
+        <circle cx="240" cy="360" r="4"/>
+      </g>
+
+    </svg>
+
+  </div>
+
+</div>
+
+
+<!-- TRUST -->
+
+<div class="trust">
+  <span>Ships across India</span>
+  <span>Skin-safe adhesive</span>
+  <span>Bridal and everyday designs</span>
+  <span>Custom designs on request</span>
+</div>
+
+
+<!-- SHOP -->
+
+<section id="shop">
+
+  <div class="head">
+    <h2>Full hand designs</h2>
+    <span>Each pack covers one hand, front and back.</span>
+  </div>
+
+  <div class="grid" id="grid"></div>
+
+</section>
+
+
+<!-- HOW TO APPLY -->
+
+<section class="alt" id="how">
+
+  <div class="head">
+    <h2>How to apply</h2>
+  </div>
+
+  <div class="steps">
+
+    <div>
+      <b>Clean the hand</b>
+      Wash and dry your skin. No oil or lotion.
+    </div>
+
+    <div>
+      <b>Stick the design</b>
+      Peel the sticker off the sheet and press it flat.
+    </div>
+
+    <div>
+      <b>Fill with henna</b>
+      Apply henna paste over the cut-out pattern.
+    </div>
+
+    <div>
+      <b>Peel and wait</b>
+      Remove the sticker after the paste sets,
+      then leave the paste on for several hours.
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- RESULTS -->
+
+<section id="results">
+
+  <div class="head">
+    <h2>Before and after</h2>
+  </div>
+
+  <div class="ba">
+
+    <div style="background:var(--card)">
+      <img
+        src="before.jpeg"
+        alt="Hand before henna"
+        onerror="this.replaceWith(document.createTextNode('Before'))"
+      >
+    </div>
+
+    <div style="background:var(--green);color:#f6ecd9">
+      <img
+        src="after.jpeg"
+        alt="Hand after henna"
+        onerror="this.replaceWith(document.createTextNode('After'))"
+      >
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="alt" id="contact">
+
+  <div class="head">
+    <h2>Need a custom design?</h2>
+  </div>
+
+  <p style="max-width:56ch">
+    Send us your bridal or event pattern and we will
+    turn it into a full hand sticker set.
+  </p>
+
+  <form id="cf">
+
+    <input
+      type="email"
+      name="email"
+      required
+      placeholder="Your email address"
+      aria-label="Email address"
+    >
+
+    <input
+      name="message"
+      placeholder="Describe the design you want"
+      aria-label="Design request"
+    >
+
+    <button class="btn" type="submit">Send request</button>
+
+  </form>
+
+</section>
+
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div>
+    <b>Henna_in_Fingers</b>
+    <br>
+    Full hand mehandi stickers, India.
+  </div>
+
+  <div>
+    &copy; 2026 Henna_in_Fingers
+  </div>
+
+</footer>
+
+
+<!-- CHECKOUT / CART -->
+
+<div class="ov" id="ov" hidden>
+
+  <div class="panel" role="dialog" aria-label="Cart and checkout">
+
+    <button class="cartbtn" id="x" type="button">Close</button>
+
+    <h2>Your order</h2>
+
+    <div id="items"></div>
+
+    <p>
+      <b>Total: ₹<span id="tot">0</span></b>
+    </p>
+
+    <form id="ck">
+
+      <input name="name" required placeholder="Full name" aria-label="Full name">
+
+      <input type="email" name="email" required placeholder="Email address" aria-label="Email address">
+
+      <input name="phone" required type="tel" placeholder="Phone number" aria-label="Phone number">
+
+      <textarea name="address" required rows="3" placeholder="Delivery address" aria-label="Delivery address"></textarea>
+
+      <div class="payment-box">
+
+        <div class="payment-title">Payment method</div>
+
+        <div>Google Pay</div>
+
+        <div class="order-reference">
+          Your order reference and email will be included with the order.
+        </div>
+
+        <button class="gpay-btn" type="submit">Pay with Google Pay</button>
+
+      </div>
+
+    </form>
+
+  </div>
+
+</div>
+
+
+<!-- TOAST -->
+
+<div id="toast" role="status"></div>
+
+
+<script>
+
+/* =========================================================
+   STORE CONFIGURATION
+   CHANGE THESE VALUES
+========================================================= */
+
+const CONFIG = {
+
+  store: "Henna_in_Fingers",
+
+  email: "Mahayoga.kee@gmail.com",
+
+  whatsapp: "918754902174",
+
+  formEndpoint: "https://formspree.io/f/mqpavwry",
+
+  upiId: "kkeerthi380-1@okicici"
+
+};
+
+
+/* =========================================================
+   PRODUCTS
+   Each line is: name, description, price in rupees, photo file name
+   The photo files must be in the same folder as this file.
+========================================================= */
+
+const P = [
+
+  ["Stencil design 1",  "Full hand mehandi sticker", 140, "1.jpeg"],
+  ["Stencil design 2",  "Full hand mehandi sticker", 140, "2.jpeg"],
+  ["Stencil design 3",  "Full hand mehandi sticker", 140, "3.jpeg"],
+  ["Stencil design 4",  "Full hand mehandi sticker", 449, "4.jpg"],
+  ["Stencil design 5",  "Full hand mehandi sticker", 449, "5.jpeg"],
+  ["Stencil design 6",  "Full hand mehandi sticker", 449, "6.jpeg"],
+  ["Stencil design 7",  "Red Tatto Sticker",         199, "7.jpeg"],
+  ["Stencil design 8",  "Red Tatto Sticker",         199, "8.jpeg"],
+  ["Stencil design 9",  "White Tatto Sticker",       249, "9.jpeg"],
+  ["Stencil design 10", "White Tatto Sticker",       249, "10.jpeg"],
+  ["Stencil design 11", "Gold Tatto Sticker",        249, "11.jpeg"]
+
+];
+
+
+/* =========================================================
+   ELEMENTS
+========================================================= */
+
+const $ = id => document.getElementById(id);
+
+const grid = $("grid");
+const overlay = $("ov");
+const items = $("items");
+const totalElement = $("tot");
+const countElement = $("n");
+const toastElement = $("toast");
+
+const cart = {};
+
+
+/* =========================================================
+   CREATE PRODUCT CARDS
+   product[0] = name, product[1] = description,
+   product[2] = price, product[3] = photo file
+========================================================= */
+
+P.forEach((product, index) => {
+
+  grid.insertAdjacentHTML("beforeend", `
+
+    <article class="card">
+
+      <div class="art" style="background:var(--card)">
+
+        <img
+          src="${product[3]}"
+          alt="${product[0]}"
+          onerror="this.replaceWith(document.createTextNode('Add photo: ${product[3]}'))"
+        >
+
+      </div>
+
+      <div class="b">
+
+        <h3>${product[0]}</h3>
+
+        <small>${product[1]}</small>
+
+        <span class="price">₹${product[2]}</span>
+
+        <button type="button" data-add="${index}">Add to cart</button>
+
+      </div>
+
+    </article>
+
+  `);
+
+});
+
+
+/* =========================================================
+   TOAST
+========================================================= */
+
+function toast(message) {
+
+  toastElement.textContent = message;
+  toastElement.classList.add("on");
+
+  setTimeout(() => {
+    toastElement.classList.remove("on");
+  }, 2200);
+
+}
+
+
+/* =========================================================
+   CART COUNT AND TOTAL
+========================================================= */
+
+function getCartCount() {
+
+  return Object.values(cart)
+    .reduce((total, quantity) => total + quantity, 0);
+
+}
+
+function getCartTotal() {
+
+  return Object.entries(cart)
+    .reduce((total, [index, quantity]) => total + P[index][2] * quantity, 0);
+
+}
+
+
+/* =========================================================
+   DRAW CART
+========================================================= */
+
+function drawCart() {
+
+  countElement.textContent = getCartCount();
+  totalElement.textContent = getCartTotal();
+
+  if (Object.keys(cart).length === 0) {
+
+    items.innerHTML = `<p>Your cart is empty.</p>`;
+    return;
+
+  }
+
+  items.innerHTML = Object.entries(cart)
+    .map(([index, quantity]) => {
+
+      const product = P[index];
+      const itemTotal = product[2] * quantity;
+
+      return `
+
+        <div class="row">
+
+          <span>
+            <b>${product[0]}</b>
+            <br>
+            <small>₹${product[2]} each</small>
+          </span>
+
+          <span>
+            <button type="button" data-minus="${index}" aria-label="Remove one">−</button>
+            ${quantity}
+            <button type="button" data-plus="${index}" aria-label="Add one">+</button>
+          </span>
+
+          <b>₹${itemTotal}</b>
+
+        </div>
+
+      `;
+
+    })
+    .join("");
+
+}
+
+
+/* =========================================================
+   ADD TO CART
+========================================================= */
+
+grid.addEventListener("click", event => {
+
+  const button = event.target.closest("[data-add]");
+
+  if (!button) return;
+
+  const index = Number(button.dataset.add);
+
+  cart[index] = (cart[index] || 0) + 1;
+
+  drawCart();
+
+  overlay.hidden = false;
+
+  toast(`${P[index][0]} added to cart`);
+
+});
+
+
+/* =========================================================
+   PLUS / MINUS
+========================================================= */
+
+items.addEventListener("click", event => {
+
+  const plus = event.target.closest("[data-plus]");
+  const minus = event.target.closest("[data-minus]");
+
+  if (plus) {
+
+    const index = Number(plus.dataset.plus);
+    cart[index] = (cart[index] || 0) + 1;
+    drawCart();
+
+  }
+
+  if (minus) {
+
+    const index = Number(minus.dataset.minus);
+
+    if (cart[index]) {
+
+      cart[index]--;
+
+      if (cart[index] <= 0) {
+        delete cart[index];
+      }
+
+    }
+
+    drawCart();
+
+  }
+
+});
+
+
+/* =========================================================
+   OPEN / CLOSE CART
+========================================================= */
+
+$("cart").addEventListener("click", () => {
+
+  overlay.hidden = false;
+  drawCart();
+
+});
+
+$("x").addEventListener("click", () => {
+
+  overlay.hidden = true;
+
+});
+
+overlay.addEventListener("click", event => {
+
+  if (event.target === overlay) {
+    overlay.hidden = true;
+  }
+
+});
+
+
+/* =========================================================
+   ORDER REFERENCE AND ORDER TEXT
+========================================================= */
+
+function createOrderReference() {
+
+  return "HIF-" + new Date().getTime().toString().slice(-8);
+
+}
+
+function createOrderMessage(orderReference, name, email, phone, address) {
+
+  const products = Object.entries(cart)
+    .map(([index, quantity]) => `${quantity} x ${P[index][0]} = ₹${P[index][2] * quantity}`)
+    .join("\n");
+
+  return `
+NEW ORDER
+====================
+
+Order reference:
+${orderReference}
+
+Products:
+${products}
+
+Total:
+₹${getCartTotal()}
+
+CUSTOMER
+====================
+
+Name:
+${name}
+
+Email:
+${email}
+
+Phone:
+${phone}
+
+Address:
+${address}
+
+Payment:
+Google Pay / UPI
+
+====================
+Henna_in_Fingers
+`;
+
+}
+
+
+/* =========================================================
+   CHECKOUT
+========================================================= */
+
+$("ck").addEventListener("submit", async event => {
+
+  event.preventDefault();
+
+  if (getCartCount() === 0) {
+
+    toast("Your cart is empty");
+    return;
+
+  }
+
+  if (!CONFIG.upiId || CONFIG.upiId === "YOUR_UPI_ID") {
+
+    toast("Please add your UPI ID in the code first.");
+    return;
+
+  }
+
+  const form = new FormData($("ck"));
+
+  const name = form.get("name");
+  const email = form.get("email");
+  const phone = form.get("phone");
+  const address = form.get("address");
+
+  const orderReference = createOrderReference();
+
+  const message = createOrderMessage(orderReference, name, email, phone, address);
+
+
+  /* Send the order to your email through Formspree */
+
+  if (CONFIG.formEndpoint && !CONFIG.formEndpoint.includes("YOUR_FORM_ID")) {
+
+    try {
+
+      await fetch(CONFIG.formEndpoint, {
+
+        method: "POST",
+
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+
+        body: JSON.stringify({
+          subject: `New order ${orderReference}`,
+          email: email,
+          order_reference: orderReference,
+          customer_name: name,
+          customer_phone: phone,
+          address: address,
+          order_total: getCartTotal(),
+          payment_method: "Google Pay / UPI",
+          message: message
+        })
+
+      });
+
+    } catch (error) {
+
+      console.error("Email submission error:", error);
+
+    }
+
+  }
+
+
+  /* Send the order to your WhatsApp */
+
+  if (CONFIG.whatsapp) {
+
+    const whatsappURL =
+      "https://wa.me/" +
+      CONFIG.whatsapp.replace(/\D/g, "") +
+      "?text=" +
+      encodeURIComponent(message);
+
+    window.open(whatsappURL, "_blank");
+
+  }
+
+
+  /* Open Google Pay / UPI with the amount filled in */
+
+  const upiURL =
+    "upi://pay" +
+    "?pa=" + encodeURIComponent(CONFIG.upiId) +
+    "&pn=" + encodeURIComponent(CONFIG.store) +
+    "&am=" + encodeURIComponent(getCartTotal()) +
+    "&cu=INR" +
+    "&tn=" + encodeURIComponent(orderReference);
+
+  window.location.href = upiURL;
+
+  toast(`Order ${orderReference} created`);
+
+
+  /* Clear the cart */
+
+  Object.keys(cart).forEach(key => delete cart[key]);
+
+  drawCart();
+
+});
+
+
+/* =========================================================
+   CUSTOM DESIGN FORM
+========================================================= */
+
+$("cf").addEventListener("submit", async event => {
+
+  event.preventDefault();
+
+  const data = Object.fromEntries(new FormData($("cf")));
+
+  if (CONFIG.formEndpoint && !CONFIG.formEndpoint.includes("YOUR_FORM_ID")) {
+
+    try {
+
+      const response = await fetch(CONFIG.formEndpoint, {
+
+        method: "POST",
+
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+
+        body: JSON.stringify({
+          subject: "Custom design request",
+          ...data
+        })
+
+      });
+
+      toast(response.ok ? "Request sent. We will email you soon." : "Could not send request.");
+
+    } catch (error) {
+
+      console.error(error);
+      toast("Could not send request.");
+
+    }
+
+  } else {
+
+    toast("Add your Formspree URL first.");
+
+  }
+
+});
+
+
+/* =========================================================
+   START
+========================================================= */
+
+drawCart();
+
+</script>
+
+</body>
+</html>
