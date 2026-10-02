@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, viewport-fit=cover"
+>
 
 <title>Henna_in_Fingers | Full Hand Mehandi Stickers</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Mukta:wght@400;600&display=swap" rel="stylesheet">
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Mukta:wght@400;600&display=swap"
+  rel="stylesheet"
+>
 
 <style>
 
 /* =========================================================
-   1. COLORS
+   COLORS
 ========================================================= */
 
 :root {
@@ -28,7 +38,9 @@
 }
 
 @media (prefers-color-scheme:dark) {
+
   :root:not([data-theme="light"]) {
+
     --bg:#17120e;
     --ink:#f3e8d6;
     --green:#0f2418;
@@ -36,11 +48,13 @@
     --gold:#e5b251;
     --line:#3a2d22;
     --card:#221a14;
+
     color-scheme:dark;
   }
 }
 
 :root[data-theme="dark"] {
+
   --bg:#17120e;
   --ink:#f3e8d6;
   --green:#0f2418;
@@ -48,12 +62,13 @@
   --gold:#e5b251;
   --line:#3a2d22;
   --card:#221a14;
+
   color-scheme:dark;
 }
 
 
 /* =========================================================
-   2. BASIC
+   BASIC
 ========================================================= */
 
 * {
@@ -72,7 +87,9 @@ body {
   font:400 17px/1.6 Mukta,system-ui,sans-serif;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   font-family:Fraunces,Georgia,serif;
   line-height:1.15;
   margin:0;
@@ -89,7 +106,7 @@ a {
 
 
 /* =========================================================
-   3. TOP BAR + HEADER
+   TOP BAR + HEADER
 ========================================================= */
 
 .bar {
@@ -141,7 +158,7 @@ nav a {
 
 
 /* =========================================================
-   4. HERO
+   HERO
 ========================================================= */
 
 .hero {
@@ -204,7 +221,7 @@ nav a {
 
 
 /* =========================================================
-   5. TRUST
+   TRUST
 ========================================================= */
 
 .trust {
@@ -237,14 +254,13 @@ section {
 
 
 /* =========================================================
-   6. PRODUCT CARDS
-   (to change the photo box shape: edit aspect-ratio below)
-   (to crop instead of showing the full photo: use "cover")
+   PRODUCT CARDS
 ========================================================= */
 
 .grid {
   display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  grid-template-columns:
+    repeat(auto-fill,minmax(230px,1fr));
   gap:22px;
 }
 
@@ -312,12 +328,13 @@ section {
 
 
 /* =========================================================
-   7. HOW TO APPLY
+   HOW TO APPLY
 ========================================================= */
 
 .steps {
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  grid-template-columns:
+    repeat(auto-fit,minmax(200px,1fr));
   gap:26px;
   counter-reset:s;
 }
@@ -346,9 +363,7 @@ section {
 
 
 /* =========================================================
-   8. BEFORE / AFTER
-   (both boxes are the same size, photo fills the box)
-   (to change the box shape: edit aspect-ratio below)
+   BEFORE / AFTER
 ========================================================= */
 
 .ba {
@@ -377,7 +392,7 @@ section {
 
 
 /* =========================================================
-   9. CONTACT
+   CONTACT
 ========================================================= */
 
 form {
@@ -414,7 +429,7 @@ footer {
 
 
 /* =========================================================
-   10. CART / CHECKOUT
+   CART / CHECKOUT
 ========================================================= */
 
 .ov {
@@ -436,7 +451,8 @@ footer {
   height:100%;
   overflow:auto;
   padding:24px;
-  padding-top:calc(24px + env(safe-area-inset-top,0px));
+  padding-top:
+    calc(24px + env(safe-area-inset-top,0px));
 }
 
 .panel h2 {
@@ -481,7 +497,7 @@ footer {
 
 .payment-box {
   margin:16px 0;
-  padding:16px;
+  padding:18px;
   border:1px solid var(--line);
   border-radius:14px;
   background:var(--card);
@@ -489,7 +505,13 @@ footer {
 
 .payment-title {
   font-weight:600;
-  margin-bottom:8px;
+  font-size:19px;
+  margin-bottom:6px;
+}
+
+.payment-info {
+  font-size:14px;
+  opacity:.75;
 }
 
 .gpay-btn {
@@ -498,14 +520,19 @@ footer {
   color:white;
   border:0;
   border-radius:12px;
-  padding:14px;
-  font:600 17px Mukta,sans-serif;
+  padding:15px;
+  font:600 18px Mukta,sans-serif;
   cursor:pointer;
-  margin-top:12px;
+  margin-top:14px;
 }
 
 .gpay-btn:hover {
   background:#155fc0;
+}
+
+.gpay-btn:disabled {
+  opacity:.6;
+  cursor:not-allowed;
 }
 
 .order-reference {
@@ -516,13 +543,14 @@ footer {
 
 
 /* =========================================================
-   11. TOAST
+   TOAST
 ========================================================= */
 
 #toast {
   position:fixed;
   left:50%;
-  bottom:calc(20px + env(safe-area-inset-bottom,0px));
+  bottom:
+    calc(20px + env(safe-area-inset-bottom,0px));
   transform:translateX(-50%);
   background:var(--ink);
   color:var(--bg);
@@ -532,6 +560,8 @@ footer {
   pointer-events:none;
   transition:opacity .2s;
   z-index:50;
+  text-align:center;
+  max-width:90%;
 }
 
 #toast.on {
@@ -540,7 +570,7 @@ footer {
 
 
 /* =========================================================
-   12. MOBILE
+   MOBILE
 ========================================================= */
 
 @media(max-width:760px) {
@@ -566,6 +596,11 @@ footer {
     margin-left:0;
     margin-top:10px;
   }
+
+  .row {
+    flex-wrap:wrap;
+  }
+
 }
 
 @media(prefers-reduced-motion:reduce) {
@@ -574,26 +609,36 @@ footer {
     transition:none!important;
     scroll-behavior:auto!important;
   }
+
 }
 
 </style>
+
 </head>
 
 
 <body>
 
-<!-- TOP BAR -->
+
+<!-- =======================================================
+     TOP BAR
+======================================================= -->
 
 <div class="bar">
-  Free delivery on orders over ₹500. Minimum order ₹120.
+  Free delivery on orders over ₹500.
+  Minimum order ₹120.
 </div>
 
 
-<!-- HEADER -->
+<!-- =======================================================
+     HEADER
+======================================================= -->
 
 <header>
 
-  <a class="logo" href="#top">Henna_in_Fingers</a>
+  <a class="logo" href="#top">
+    Henna_in_Fingers
+  </a>
 
   <nav>
     <a href="#shop">Shop</a>
@@ -602,7 +647,12 @@ footer {
     <a href="#contact">Contact</a>
   </nav>
 
-  <button class="cartbtn" id="cart" type="button" aria-label="Open cart">
+  <button
+    class="cartbtn"
+    id="cart"
+    type="button"
+    aria-label="Open cart"
+  >
     Cart (<span id="n">0</span>)
   </button>
 
@@ -612,13 +662,17 @@ footer {
 <main id="top">
 
 
-<!-- HERO -->
+<!-- =======================================================
+     HERO
+======================================================= -->
 
 <div class="hero">
 
   <div>
 
-    <h1>Full hand mehandi in minutes, not hours.</h1>
+    <h1>
+      Full hand mehandi in minutes, not hours.
+    </h1>
 
     <p>
       Peel-and-apply henna stickers for the whole hand,
@@ -626,15 +680,26 @@ footer {
       henna paste, peel off the sticker, and keep the stain.
     </p>
 
-    <a class="btn" href="#shop">Shop full hand designs</a>
-    <a class="btn ghost" href="#how">See how it works</a>
+    <a class="btn" href="#shop">
+      Shop full hand designs
+    </a>
+
+    <a class="btn ghost" href="#how">
+      See how it works
+    </a>
 
   </div>
 
 
   <div class="sheet" aria-hidden="true">
 
-    <svg viewBox="0 0 300 400" fill="none" stroke="#6b2f14" stroke-width="2.5" stroke-linecap="round">
+    <svg
+      viewBox="0 0 300 400"
+      fill="none"
+      stroke="#6b2f14"
+      stroke-width="2.5"
+      stroke-linecap="round"
+    >
 
       <g transform="translate(150 150)">
 
@@ -642,15 +707,53 @@ footer {
         <circle r="30"/>
         <circle r="8" fill="#6b2f14"/>
 
-        <path d="M0-46C14-70 14-90 0-110C-14-90-14-70 0-46Z"/>
-        <path d="M0 46C14 70 14 90 0 110C-14 90-14 70 0 46Z"/>
-        <path d="M-46 0C-70 14-90 14-110 0C-90-14-70-14-46 0Z"/>
-        <path d="M46 0C70 14 90 14 110 0C90-14 70-14 46 0Z"/>
+        <path d="
+          M0-46
+          C14-70 14-90 0-110
+          C-14-90-14-70 0-46Z
+        "/>
 
-        <path d="M33-33C60-45 72-62 70-80C50-72 38-55 33-33Z"/>
-        <path d="M-33-33C-60-45-72-62-70-80C-50-72-38-55-33-33Z"/>
-        <path d="M33 33C60 45 72 62 70 80C50 72 38 55 33 33Z"/>
-        <path d="M-33 33C-60 45-72 62-70 80C-50 72-38 55-33 33Z"/>
+        <path d="
+          M0 46
+          C14 70 14 90 0 110
+          C-14 90-14 70 0 46Z
+        "/>
+
+        <path d="
+          M-46 0
+          C-70 14-90 14-110 0
+          C-90-14-70-14-46 0Z
+        "/>
+
+        <path d="
+          M46 0
+          C70 14 90 14 110 0
+          C90-14 70-14 46 0Z
+        "/>
+
+        <path d="
+          M33-33
+          C60-45 72-62 70-80
+          C50-72 38-55 33-33Z
+        "/>
+
+        <path d="
+          M-33-33
+          C-60-45-72-62-70-80
+          C-50-72-38-55-33-33Z
+        "/>
+
+        <path d="
+          M33 33
+          C60 45 72 62 70 80
+          C50 72 38 55 33 33Z
+        "/>
+
+        <path d="
+          M-33 33
+          C-60 45-72 62-70 80
+          C-50 72-38 55-33 33Z
+        "/>
 
       </g>
 
@@ -658,11 +761,13 @@ footer {
       <path d="M40 330Q95 300 150 330T260 330"/>
 
       <g fill="#6b2f14" stroke="none">
+
         <circle cx="60" cy="360" r="4"/>
         <circle cx="105" cy="360" r="4"/>
         <circle cx="150" cy="360" r="4"/>
         <circle cx="195" cy="360" r="4"/>
         <circle cx="240" cy="360" r="4"/>
+
       </g>
 
     </svg>
@@ -672,23 +777,34 @@ footer {
 </div>
 
 
-<!-- TRUST -->
+<!-- =======================================================
+     TRUST
+======================================================= -->
 
 <div class="trust">
+
   <span>Ships across India</span>
   <span>Skin-safe adhesive</span>
   <span>Bridal and everyday designs</span>
   <span>Custom designs on request</span>
+
 </div>
 
 
-<!-- SHOP -->
+<!-- =======================================================
+     SHOP
+======================================================= -->
 
 <section id="shop">
 
   <div class="head">
+
     <h2>Full hand designs</h2>
-    <span>Each pack covers one hand, front and back.</span>
+
+    <span>
+      Each pack covers one hand, front and back.
+    </span>
+
   </div>
 
   <div class="grid" id="grid"></div>
@@ -696,35 +812,54 @@ footer {
 </section>
 
 
-<!-- HOW TO APPLY -->
+<!-- =======================================================
+     HOW TO APPLY
+======================================================= -->
 
 <section class="alt" id="how">
 
   <div class="head">
+
     <h2>How to apply</h2>
+
   </div>
 
   <div class="steps">
 
     <div>
+
       <b>Clean the hand</b>
-      Wash and dry your skin. No oil or lotion.
+
+      Wash and dry your skin.
+      No oil or lotion.
+
     </div>
 
     <div>
+
       <b>Stick the design</b>
-      Peel the sticker off the sheet and press it flat.
+
+      Peel the sticker off the sheet
+      and press it flat.
+
     </div>
 
     <div>
+
       <b>Fill with henna</b>
-      Apply henna paste over the cut-out pattern.
+
+      Apply henna paste over
+      the cut-out pattern.
+
     </div>
 
     <div>
+
       <b>Peel and wait</b>
+
       Remove the sticker after the paste sets,
       then leave the paste on for several hours.
+
     </div>
 
   </div>
@@ -732,30 +867,52 @@ footer {
 </section>
 
 
-<!-- RESULTS -->
+<!-- =======================================================
+     RESULTS
+======================================================= -->
 
 <section id="results">
 
   <div class="head">
+
     <h2>Before and after</h2>
+
   </div>
 
   <div class="ba">
 
     <div style="background:var(--card)">
+
       <img
         src="before.jpeg"
         alt="Hand before henna"
-        onerror="this.replaceWith(document.createTextNode('Before'))"
+        onerror="
+          this.replaceWith(
+            document.createTextNode('Before')
+          )
+        "
       >
+
     </div>
 
-    <div style="background:var(--green);color:#f6ecd9">
+
+    <div
+      style="
+        background:var(--green);
+        color:#f6ecd9
+      "
+    >
+
       <img
         src="after.jpeg"
         alt="Hand after henna"
-        onerror="this.replaceWith(document.createTextNode('After'))"
+        onerror="
+          this.replaceWith(
+            document.createTextNode('After')
+          )
+        "
       >
+
     </div>
 
   </div>
@@ -763,17 +920,23 @@ footer {
 </section>
 
 
-<!-- CONTACT -->
+<!-- =======================================================
+     CONTACT
+======================================================= -->
 
 <section class="alt" id="contact">
 
   <div class="head">
+
     <h2>Need a custom design?</h2>
+
   </div>
 
   <p style="max-width:56ch">
+
     Send us your bridal or event pattern and we will
     turn it into a full hand sticker set.
+
   </p>
 
   <form id="cf">
@@ -792,7 +955,9 @@ footer {
       aria-label="Design request"
     >
 
-    <button class="btn" type="submit">Send request</button>
+    <button class="btn" type="submit">
+      Send request
+    </button>
 
   </form>
 
@@ -802,14 +967,20 @@ footer {
 </main>
 
 
-<!-- FOOTER -->
+<!-- =======================================================
+     FOOTER
+======================================================= -->
 
 <footer>
 
   <div>
+
     <b>Henna_in_Fingers</b>
+
     <br>
+
     Full hand mehandi stickers, India.
+
   </div>
 
   <div>
@@ -819,43 +990,115 @@ footer {
 </footer>
 
 
-<!-- CHECKOUT / CART -->
+<!-- =======================================================
+     CART / CHECKOUT
+======================================================= -->
 
-<div class="ov" id="ov" hidden>
+<div
+  class="ov"
+  id="ov"
+  hidden
+>
 
-  <div class="panel" role="dialog" aria-label="Cart and checkout">
+  <div
+    class="panel"
+    role="dialog"
+    aria-label="Cart and checkout"
+  >
 
-    <button class="cartbtn" id="x" type="button">Close</button>
+    <button
+      class="cartbtn"
+      id="x"
+      type="button"
+    >
+      Close
+    </button>
+
 
     <h2>Your order</h2>
 
+
     <div id="items"></div>
 
+
     <p>
-      <b>Total: ₹<span id="tot">0</span></b>
+
+      <b>
+        Total: ₹<span id="tot">0</span>
+      </b>
+
     </p>
+
 
     <form id="ck">
 
-      <input name="name" required placeholder="Full name" aria-label="Full name">
+      <input
+        name="name"
+        required
+        placeholder="Full name"
+        aria-label="Full name"
+      >
 
-      <input type="email" name="email" required placeholder="Email address" aria-label="Email address">
 
-      <input name="phone" required type="tel" placeholder="Phone number" aria-label="Phone number">
+      <input
+        type="email"
+        name="email"
+        required
+        placeholder="Email address"
+        aria-label="Email address"
+      >
 
-      <textarea name="address" required rows="3" placeholder="Delivery address" aria-label="Delivery address"></textarea>
+
+      <input
+        name="phone"
+        required
+        type="tel"
+        placeholder="Phone number"
+        aria-label="Phone number"
+      >
+
+
+      <textarea
+        name="address"
+        required
+        rows="3"
+        placeholder="Delivery address"
+        aria-label="Delivery address"
+      ></textarea>
+
+
+      <!-- PAYMENT -->
 
       <div class="payment-box">
 
-        <div class="payment-title">Payment method</div>
-
-        <div>Google Pay</div>
-
-        <div class="order-reference">
-          Your order reference and email will be included with the order.
+        <div class="payment-title">
+          Payment
         </div>
 
-        <button class="gpay-btn" type="submit">Pay with Google Pay</button>
+        <div>
+          UPI / Google Pay
+        </div>
+
+        <div class="payment-info">
+
+          Your order total will automatically
+          be sent to your UPI payment app.
+
+        </div>
+
+        <button
+          class="gpay-btn"
+          type="submit"
+        >
+          Pay Now
+        </button>
+
+        <div class="order-reference">
+
+          UPI ID:
+          kkeerthi380-1@okicici
+
+        </div>
 
       </div>
 
@@ -866,16 +1109,20 @@ footer {
 </div>
 
 
-<!-- TOAST -->
+<!-- =======================================================
+     TOAST
+======================================================= -->
 
-<div id="toast" role="status"></div>
+<div
+  id="toast"
+  role="status"
+></div>
 
 
 <script>
 
 /* =========================================================
    STORE CONFIGURATION
-   CHANGE THESE VALUES
 ========================================================= */
 
 const CONFIG = {
@@ -886,32 +1133,97 @@ const CONFIG = {
 
   whatsapp: "918754902174",
 
-  formEndpoint: "https://formspree.io/f/mqpavwry",
+  formEndpoint:
+    "https://formspree.io/f/mqpavwry",
 
-  upiId: "kkeerthi380-1@okicici"
+  upiId:
+    "kkeerthi380-1@okicici"
 
 };
 
 
 /* =========================================================
    PRODUCTS
-   Each line is: name, description, price in rupees, photo file name
-   The photo files must be in the same folder as this file.
 ========================================================= */
 
 const P = [
 
-  ["Stencil design 1",  "Full hand mehandi sticker", 140, "1.jpeg"],
-  ["Stencil design 2",  "Full hand mehandi sticker", 140, "2.jpeg"],
-  ["Stencil design 3",  "Full hand mehandi sticker", 140, "3.jpeg"],
-  ["Stencil design 4",  "Full hand mehandi sticker", 449, "4.jpg"],
-  ["Stencil design 5",  "Full hand mehandi sticker", 449, "5.jpeg"],
-  ["Stencil design 6",  "Full hand mehandi sticker", 449, "6.jpeg"],
-  ["Stencil design 7",  "Red Tatto Sticker",         199, "7.jpeg"],
-  ["Stencil design 8",  "Red Tatto Sticker",         199, "8.jpeg"],
-  ["Stencil design 9",  "White Tatto Sticker",       249, "9.jpeg"],
-  ["Stencil design 10", "White Tatto Sticker",       249, "10.jpeg"],
-  ["Stencil design 11", "Gold Tatto Sticker",        249, "11.jpeg"]
+  [
+    "Stencil design 1",
+    "Full hand mehandi sticker",
+    140,
+    "1.jpeg"
+  ],
+
+  [
+    "Stencil design 2",
+    "Full hand mehandi sticker",
+    140,
+    "2.jpeg"
+  ],
+
+  [
+    "Stencil design 3",
+    "Full hand mehandi sticker",
+    140,
+    "3.jpeg"
+  ],
+
+  [
+    "Stencil design 4",
+    "Full hand mehandi sticker",
+    449,
+    "4.jpg"
+  ],
+
+  [
+    "Stencil design 5",
+    "Full hand mehandi sticker",
+    449,
+    "5.jpeg"
+  ],
+
+  [
+    "Stencil design 6",
+    "Full hand mehandi sticker",
+    449,
+    "6.jpeg"
+  ],
+
+  [
+    "Stencil design 7",
+    "Red Tatto Sticker",
+    199,
+    "7.jpeg"
+  ],
+
+  [
+    "Stencil design 8",
+    "Red Tatto Sticker",
+    199,
+    "8.jpeg"
+  ],
+
+  [
+    "Stencil design 9",
+    "White Tatto Sticker",
+    249,
+    "9.jpeg"
+  ],
+
+  [
+    "Stencil design 10",
+    "White Tatto Sticker",
+    249,
+    "10.jpeg"
+  ],
+
+  [
+    "Stencil design 11",
+    "Gold Tatto Sticker",
+    249,
+    "11.jpeg"
+  ]
 
 ];
 
@@ -920,55 +1232,89 @@ const P = [
    ELEMENTS
 ========================================================= */
 
-const $ = id => document.getElementById(id);
+const $ = id =>
+  document.getElementById(id);
 
-const grid = $("grid");
-const overlay = $("ov");
-const items = $("items");
-const totalElement = $("tot");
-const countElement = $("n");
-const toastElement = $("toast");
+const grid =
+  $("grid");
+
+const overlay =
+  $("ov");
+
+const items =
+  $("items");
+
+const totalElement =
+  $("tot");
+
+const countElement =
+  $("n");
+
+const toastElement =
+  $("toast");
 
 const cart = {};
 
 
 /* =========================================================
-   CREATE PRODUCT CARDS
-   product[0] = name, product[1] = description,
-   product[2] = price, product[3] = photo file
+   PRODUCT CARDS
 ========================================================= */
 
 P.forEach((product, index) => {
 
-  grid.insertAdjacentHTML("beforeend", `
+  grid.insertAdjacentHTML(
+
+    "beforeend",
+
+    `
 
     <article class="card">
 
-      <div class="art" style="background:var(--card)">
+      <div class="art">
 
         <img
           src="${product[3]}"
           alt="${product[0]}"
-          onerror="this.replaceWith(document.createTextNode('Add photo: ${product[3]}'))"
+          onerror="
+            this.replaceWith(
+              document.createTextNode(
+                'Add photo: ${product[3]}'
+              )
+            )
+          "
         >
 
       </div>
 
+
       <div class="b">
 
-        <h3>${product[0]}</h3>
+        <h3>
+          ${product[0]}
+        </h3>
 
-        <small>${product[1]}</small>
+        <small>
+          ${product[1]}
+        </small>
 
-        <span class="price">₹${product[2]}</span>
+        <span class="price">
+          ₹${product[2]}
+        </span>
 
-        <button type="button" data-add="${index}">Add to cart</button>
+        <button
+          type="button"
+          data-add="${index}"
+        >
+          Add to cart
+        </button>
 
       </div>
 
     </article>
 
-  `);
+    `
+
+  );
 
 });
 
@@ -979,31 +1325,54 @@ P.forEach((product, index) => {
 
 function toast(message) {
 
-  toastElement.textContent = message;
+  toastElement.textContent =
+    message;
+
   toastElement.classList.add("on");
 
   setTimeout(() => {
+
     toastElement.classList.remove("on");
-  }, 2200);
+
+  }, 3000);
 
 }
 
 
 /* =========================================================
-   CART COUNT AND TOTAL
+   CART COUNT
 ========================================================= */
 
 function getCartCount() {
 
   return Object.values(cart)
-    .reduce((total, quantity) => total + quantity, 0);
+    .reduce(
+      (total, quantity) =>
+        total + quantity,
+      0
+    );
 
 }
+
+
+/* =========================================================
+   CART TOTAL
+========================================================= */
 
 function getCartTotal() {
 
   return Object.entries(cart)
-    .reduce((total, [index, quantity]) => total + P[index][2] * quantity, 0);
+    .reduce(
+
+      (total, [index, quantity]) =>
+
+        total +
+        P[index][2] *
+        quantity,
+
+      0
+
+    );
 
 }
 
@@ -1014,46 +1383,93 @@ function getCartTotal() {
 
 function drawCart() {
 
-  countElement.textContent = getCartCount();
-  totalElement.textContent = getCartTotal();
+  countElement.textContent =
+    getCartCount();
 
-  if (Object.keys(cart).length === 0) {
+  totalElement.textContent =
+    getCartTotal();
 
-    items.innerHTML = `<p>Your cart is empty.</p>`;
+
+  if (
+    Object.keys(cart).length === 0
+  ) {
+
+    items.innerHTML =
+      "<p>Your cart is empty.</p>";
+
     return;
 
   }
 
-  items.innerHTML = Object.entries(cart)
-    .map(([index, quantity]) => {
 
-      const product = P[index];
-      const itemTotal = product[2] * quantity;
+  items.innerHTML =
 
-      return `
+    Object.entries(cart)
 
-        <div class="row">
+      .map(
+        ([index, quantity]) => {
 
-          <span>
-            <b>${product[0]}</b>
-            <br>
-            <small>₹${product[2]} each</small>
-          </span>
+          const product =
+            P[index];
 
-          <span>
-            <button type="button" data-minus="${index}" aria-label="Remove one">−</button>
-            ${quantity}
-            <button type="button" data-plus="${index}" aria-label="Add one">+</button>
-          </span>
+          const itemTotal =
+            product[2] * quantity;
 
-          <b>₹${itemTotal}</b>
 
-        </div>
+          return `
 
-      `;
+          <div class="row">
 
-    })
-    .join("");
+            <span>
+
+              <b>
+                ${product[0]}
+              </b>
+
+              <br>
+
+              <small>
+                ₹${product[2]} each
+              </small>
+
+            </span>
+
+
+            <span>
+
+              <button
+                type="button"
+                data-minus="${index}"
+                aria-label="Remove one"
+              >
+                −
+              </button>
+
+              ${quantity}
+
+              <button
+                type="button"
+                data-plus="${index}"
+                aria-label="Add one"
+              >
+                +
+              </button>
+
+            </span>
+
+
+            <b>
+              ₹${itemTotal}
+            </b>
+
+          </div>
+
+          `;
+
+        }
+      )
+
+      .join("");
 
 }
 
@@ -1062,106 +1478,211 @@ function drawCart() {
    ADD TO CART
 ========================================================= */
 
-grid.addEventListener("click", event => {
+grid.addEventListener(
+  "click",
+  event => {
 
-  const button = event.target.closest("[data-add]");
+    const button =
+      event.target.closest(
+        "[data-add]"
+      );
 
-  if (!button) return;
+    if (!button)
+      return;
 
-  const index = Number(button.dataset.add);
 
-  cart[index] = (cart[index] || 0) + 1;
+    const index =
+      Number(
+        button.dataset.add
+      );
 
-  drawCart();
 
-  overlay.hidden = false;
+    cart[index] =
+      (cart[index] || 0) + 1;
 
-  toast(`${P[index][0]} added to cart`);
 
-});
+    drawCart();
+
+
+    overlay.hidden =
+      false;
+
+
+    toast(
+      `${P[index][0]} added to cart`
+    );
+
+  }
+);
 
 
 /* =========================================================
    PLUS / MINUS
 ========================================================= */
 
-items.addEventListener("click", event => {
+items.addEventListener(
+  "click",
+  event => {
 
-  const plus = event.target.closest("[data-plus]");
-  const minus = event.target.closest("[data-minus]");
+    const plus =
+      event.target.closest(
+        "[data-plus]"
+      );
 
-  if (plus) {
+    const minus =
+      event.target.closest(
+        "[data-minus]"
+      );
 
-    const index = Number(plus.dataset.plus);
-    cart[index] = (cart[index] || 0) + 1;
-    drawCart();
 
-  }
+    if (plus) {
 
-  if (minus) {
+      const index =
+        Number(
+          plus.dataset.plus
+        );
 
-    const index = Number(minus.dataset.minus);
 
-    if (cart[index]) {
+      cart[index] =
+        (cart[index] || 0) + 1;
 
-      cart[index]--;
 
-      if (cart[index] <= 0) {
-        delete cart[index];
-      }
+      drawCart();
 
     }
 
+
+    if (minus) {
+
+      const index =
+        Number(
+          minus.dataset.minus
+        );
+
+
+      if (cart[index]) {
+
+        cart[index]--;
+
+        if (cart[index] <= 0) {
+
+          delete cart[index];
+
+        }
+
+      }
+
+
+      drawCart();
+
+    }
+
+  }
+);
+
+
+/* =========================================================
+   OPEN CART
+========================================================= */
+
+$("cart").addEventListener(
+  "click",
+  () => {
+
+    overlay.hidden =
+      false;
+
     drawCart();
 
   }
-
-});
+);
 
 
 /* =========================================================
-   OPEN / CLOSE CART
+   CLOSE CART
 ========================================================= */
 
-$("cart").addEventListener("click", () => {
+$("x").addEventListener(
+  "click",
+  () => {
 
-  overlay.hidden = false;
-  drawCart();
+    overlay.hidden =
+      true;
 
-});
-
-$("x").addEventListener("click", () => {
-
-  overlay.hidden = true;
-
-});
-
-overlay.addEventListener("click", event => {
-
-  if (event.target === overlay) {
-    overlay.hidden = true;
   }
-
-});
+);
 
 
 /* =========================================================
-   ORDER REFERENCE AND ORDER TEXT
+   CLOSE BY CLICKING OUTSIDE
+========================================================= */
+
+overlay.addEventListener(
+  "click",
+  event => {
+
+    if (
+      event.target === overlay
+    ) {
+
+      overlay.hidden =
+        true;
+
+    }
+
+  }
+);
+
+
+/* =========================================================
+   ORDER REFERENCE
 ========================================================= */
 
 function createOrderReference() {
 
-  return "HIF-" + new Date().getTime().toString().slice(-8);
+  return (
+    "HIF-" +
+    Date.now()
+      .toString()
+      .slice(-8)
+  );
 
 }
 
-function createOrderMessage(orderReference, name, email, phone, address) {
 
-  const products = Object.entries(cart)
-    .map(([index, quantity]) => `${quantity} x ${P[index][0]} = ₹${P[index][2] * quantity}`)
-    .join("\n");
+/* =========================================================
+   ORDER MESSAGE
+========================================================= */
+
+function createOrderMessage(
+  orderReference,
+  name,
+  email,
+  phone,
+  address
+) {
+
+  const products =
+
+    Object.entries(cart)
+
+      .map(
+        ([index, quantity]) => {
+
+          return (
+            `${quantity} x ` +
+            `${P[index][0]} = ` +
+            `₹${P[index][2] * quantity}`
+          );
+
+        }
+      )
+
+      .join("\n");
+
 
   return `
+
 NEW ORDER
 ====================
 
@@ -1190,172 +1711,548 @@ Address:
 ${address}
 
 Payment:
-Google Pay / UPI
+UPI / Google Pay
 
 ====================
 Henna_in_Fingers
+
 `;
 
 }
 
 
 /* =========================================================
-   CHECKOUT
+   DIRECT PAY NOW
 ========================================================= */
 
-$("ck").addEventListener("submit", async event => {
+$("ck").addEventListener(
+  "submit",
+  event => {
 
-  event.preventDefault();
-
-  if (getCartCount() === 0) {
-
-    toast("Your cart is empty");
-    return;
-
-  }
-
-  if (!CONFIG.upiId || CONFIG.upiId === "YOUR_UPI_ID") {
-
-    toast("Please add your UPI ID in the code first.");
-    return;
-
-  }
-
-  const form = new FormData($("ck"));
-
-  const name = form.get("name");
-  const email = form.get("email");
-  const phone = form.get("phone");
-  const address = form.get("address");
-
-  const orderReference = createOrderReference();
-
-  const message = createOrderMessage(orderReference, name, email, phone, address);
+    event.preventDefault();
 
 
-  /* Send the order to your email through Formspree */
+    /* ---------------------------------------------
+       CHECK CART
+    --------------------------------------------- */
 
-  if (CONFIG.formEndpoint && !CONFIG.formEndpoint.includes("YOUR_FORM_ID")) {
+    if (
+      getCartCount() === 0
+    ) {
 
-    try {
+      toast(
+        "Your cart is empty."
+      );
 
-      await fetch(CONFIG.formEndpoint, {
-
-        method: "POST",
-
-        headers: {
-          "Content-Type": "application/json",
-          "Accept": "application/json"
-        },
-
-        body: JSON.stringify({
-          subject: `New order ${orderReference}`,
-          email: email,
-          order_reference: orderReference,
-          customer_name: name,
-          customer_phone: phone,
-          address: address,
-          order_total: getCartTotal(),
-          payment_method: "Google Pay / UPI",
-          message: message
-        })
-
-      });
-
-    } catch (error) {
-
-      console.error("Email submission error:", error);
+      return;
 
     }
 
+
+    /* ---------------------------------------------
+       CHECK UPI
+    --------------------------------------------- */
+
+    if (
+      !CONFIG.upiId ||
+      CONFIG.upiId ===
+      "YOUR_UPI_ID"
+    ) {
+
+      toast(
+        "UPI ID is not configured."
+      );
+
+      return;
+
+    }
+
+
+    /* ---------------------------------------------
+       GET CUSTOMER DATA
+    --------------------------------------------- */
+
+    const form =
+      new FormData(
+        $("ck")
+      );
+
+
+    const name =
+      String(
+        form.get("name") || ""
+      ).trim();
+
+
+    const email =
+      String(
+        form.get("email") || ""
+      ).trim();
+
+
+    const phone =
+      String(
+        form.get("phone") || ""
+      ).trim();
+
+
+    const address =
+      String(
+        form.get("address") || ""
+      ).trim();
+
+
+    /* ---------------------------------------------
+       VALIDATE
+    --------------------------------------------- */
+
+    if (
+      !name ||
+      !email ||
+      !phone ||
+      !address
+    ) {
+
+      toast(
+        "Please fill in all delivery details."
+      );
+
+      return;
+
+    }
+
+
+    /* ---------------------------------------------
+       GET TOTAL
+    --------------------------------------------- */
+
+    const total =
+      getCartTotal();
+
+
+    if (total <= 0) {
+
+      toast(
+        "Invalid order amount."
+      );
+
+      return;
+
+    }
+
+
+    /* ---------------------------------------------
+       CREATE ORDER ID
+    --------------------------------------------- */
+
+    const orderReference =
+      createOrderReference();
+
+
+    /* ---------------------------------------------
+       CREATE UPI URL
+    --------------------------------------------- */
+
+    const upiURL =
+
+      "upi://pay" +
+
+      "?pa=" +
+      encodeURIComponent(
+        CONFIG.upiId
+      ) +
+
+      "&pn=" +
+      encodeURIComponent(
+        CONFIG.store
+      ) +
+
+      "&am=" +
+      encodeURIComponent(
+        total.toFixed(2)
+      ) +
+
+      "&cu=INR" +
+
+      "&tn=" +
+      encodeURIComponent(
+        "Order " +
+        orderReference
+      );
+
+
+    /* ---------------------------------------------
+       CREATE ORDER MESSAGE
+    --------------------------------------------- */
+
+    const message =
+      createOrderMessage(
+        orderReference,
+        name,
+        email,
+        phone,
+        address
+      );
+
+
+    /* ---------------------------------------------
+       SAVE ORDER BEFORE PAYMENT
+    --------------------------------------------- */
+
+    localStorage.setItem(
+
+      "pendingOrder",
+
+      JSON.stringify({
+
+        orderReference,
+
+        name,
+
+        email,
+
+        phone,
+
+        address,
+
+        total,
+
+        message,
+
+        createdAt:
+          new Date().toISOString()
+
+      })
+
+    );
+
+
+    /* ---------------------------------------------
+       DISABLE BUTTON
+    --------------------------------------------- */
+
+    const button =
+      document.querySelector(
+        ".gpay-btn"
+      );
+
+
+    if (button) {
+
+      button.disabled =
+        true;
+
+      button.textContent =
+        "Opening payment...";
+
+    }
+
+
+    /* ---------------------------------------------
+       DIRECT PAYMENT
+    --------------------------------------------- */
+
+    toast(
+      `Opening payment for ₹${total}...`
+    );
+
+
+    /*
+      THIS IS THE IMPORTANT PART.
+
+      The customer goes directly from
+      your Pay Now button to the UPI
+      payment application.
+    */
+
+    window.location.href =
+      upiURL;
+
   }
+);
 
 
-  /* Send the order to your WhatsApp */
+/* =========================================================
+   PROCESS ORDER WHEN CUSTOMER RETURNS
+========================================================= */
 
-  if (CONFIG.whatsapp) {
+window.addEventListener(
+  "pageshow",
+  async () => {
 
-    const whatsappURL =
-      "https://wa.me/" +
-      CONFIG.whatsapp.replace(/\D/g, "") +
-      "?text=" +
-      encodeURIComponent(message);
+    const saved =
+      localStorage.getItem(
+        "pendingOrder"
+      );
 
-    window.open(whatsappURL, "_blank");
+
+    if (!saved)
+      return;
+
+
+    let order;
+
+
+    try {
+
+      order =
+        JSON.parse(saved);
+
+    }
+    catch {
+
+      localStorage.removeItem(
+        "pendingOrder"
+      );
+
+      return;
+
+    }
+
+
+    /*
+      IMPORTANT:
+
+      A raw UPI deep link does not provide
+      reliable payment verification to this
+      website.
+
+      So we ask the customer whether they
+      completed payment.
+    */
+
+    const paid =
+      confirm(
+        `Order ${order.orderReference}\n\n` +
+        `Amount: ₹${order.total}\n\n` +
+        `Did you complete the UPI payment?`
+      );
+
+
+    if (!paid) {
+
+      toast(
+        "Payment was not confirmed. Your order is still pending."
+      );
+
+      return;
+
+    }
+
+
+    /* ---------------------------------------------
+       SEND ORDER TO FORMSPREE
+    --------------------------------------------- */
+
+    if (
+      CONFIG.formEndpoint
+    ) {
+
+      try {
+
+        await fetch(
+          CONFIG.formEndpoint,
+          {
+
+            method:"POST",
+
+            headers:{
+
+              "Content-Type":
+                "application/json",
+
+              "Accept":
+                "application/json"
+
+            },
+
+            body:JSON.stringify({
+
+              subject:
+                `Order ${order.orderReference}`,
+
+              order_reference:
+                order.orderReference,
+
+              customer_name:
+                order.name,
+
+              email:
+                order.email,
+
+              customer_phone:
+                order.phone,
+
+              address:
+                order.address,
+
+              order_total:
+                `₹${order.total}`,
+
+              payment_method:
+                "UPI / Google Pay",
+
+              payment_status:
+                "Customer reported payment completed",
+
+              message:
+                order.message
+
+            })
+
+          }
+        );
+
+      }
+      catch (error) {
+
+        console.error(
+          "Formspree error:",
+          error
+        );
+
+      }
+
+    }
+
+
+    /* ---------------------------------------------
+       OPEN WHATSAPP
+    --------------------------------------------- */
+
+    if (
+      CONFIG.whatsapp
+    ) {
+
+      const whatsappURL =
+
+        "https://wa.me/" +
+
+        CONFIG.whatsapp
+          .replace(/\D/g, "") +
+
+        "?text=" +
+
+        encodeURIComponent(
+          order.message
+        );
+
+
+      window.open(
+        whatsappURL,
+        "_blank"
+      );
+
+    }
+
+
+    /* ---------------------------------------------
+       CLEAR CART
+    --------------------------------------------- */
+
+    Object.keys(cart)
+      .forEach(
+        key =>
+          delete cart[key]
+      );
+
+
+    drawCart();
+
+
+    /* ---------------------------------------------
+       REMOVE PENDING ORDER
+    --------------------------------------------- */
+
+    localStorage.removeItem(
+      "pendingOrder"
+    );
+
+
+    toast(
+      `Order ${order.orderReference} received.`
+    );
 
   }
-
-
-  /* Open Google Pay / UPI with the amount filled in */
-
-  const upiURL =
-    "upi://pay" +
-    "?pa=" + encodeURIComponent(CONFIG.upiId) +
-    "&pn=" + encodeURIComponent(CONFIG.store) +
-    "&am=" + encodeURIComponent(getCartTotal()) +
-    "&cu=INR" +
-    "&tn=" + encodeURIComponent(orderReference);
-
-  window.location.href = upiURL;
-
-  toast(`Order ${orderReference} created`);
-
-
-  /* Clear the cart */
-
-  Object.keys(cart).forEach(key => delete cart[key]);
-
-  drawCart();
-
-});
+);
 
 
 /* =========================================================
    CUSTOM DESIGN FORM
 ========================================================= */
 
-$("cf").addEventListener("submit", async event => {
+$("cf").addEventListener(
+  "submit",
+  async event => {
 
-  event.preventDefault();
+    event.preventDefault();
 
-  const data = Object.fromEntries(new FormData($("cf")));
 
-  if (CONFIG.formEndpoint && !CONFIG.formEndpoint.includes("YOUR_FORM_ID")) {
+    const data =
+      Object.fromEntries(
+        new FormData(
+          $("cf")
+        )
+      );
+
 
     try {
 
-      const response = await fetch(CONFIG.formEndpoint, {
+      const response =
+        await fetch(
+          CONFIG.formEndpoint,
+          {
 
-        method: "POST",
+            method:"POST",
 
-        headers: {
-          "Content-Type": "application/json",
-          "Accept": "application/json"
-        },
+            headers:{
 
-        body: JSON.stringify({
-          subject: "Custom design request",
-          ...data
-        })
+              "Content-Type":
+                "application/json",
 
-      });
+              "Accept":
+                "application/json"
 
-      toast(response.ok ? "Request sent. We will email you soon." : "Could not send request.");
+            },
 
-    } catch (error) {
+            body:JSON.stringify({
 
-      console.error(error);
-      toast("Could not send request.");
+              subject:
+                "Custom design request",
+
+              ...data
+
+            })
+
+          }
+        );
+
+
+      toast(
+
+        response.ok
+
+          ? "Request sent. We will email you soon."
+
+          : "Could not send request."
+
+      );
+
+    }
+    catch (error) {
+
+      console.error(
+        error
+      );
+
+      toast(
+        "Could not send request."
+      );
 
     }
 
-  } else {
-
-    toast("Add your Formspree URL first.");
-
   }
-
-});
+);
 
 
 /* =========================================================
@@ -1367,4 +2264,6 @@ drawCart();
 </script>
 
 </body>
+
 </html>
+
